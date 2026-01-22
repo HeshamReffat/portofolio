@@ -150,7 +150,7 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                                 widget.experience.period,
                                 style: GoogleFonts.poppins(
                                   fontSize: 14,
-                                  color: AppColors.accentPurple,
+                                  color: AppColors.textWhite,
                                 ),
                               ),
                             ),
