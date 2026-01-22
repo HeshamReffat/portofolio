@@ -63,7 +63,11 @@ class _ExperienceCardState extends State<_ExperienceCard> {
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
-      child: Container(
+      child: GestureDetector(
+        onTapDown: (_) => setState(() => _isHovered = true),
+        onTapUp: (_) => setState(() => _isHovered = false),
+        onTapCancel: () => setState(() => _isHovered = false),
+        child: Container(
         margin: const EdgeInsets.only(bottom: 30),
         child: Stack(
           children: [
@@ -116,7 +120,7 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                                 widget.experience.period,
                                 style: GoogleFonts.poppins(
                                   fontSize: 12,
-                                  color: AppColors.accentPurple,
+                                  color: AppColors.textWhite,
                                 ),
                               ),
                             ),
@@ -235,6 +239,7 @@ class _ExperienceCardState extends State<_ExperienceCard> {
             ),
           ],
         ),
+      ),
       ),
     );
   }

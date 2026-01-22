@@ -47,59 +47,72 @@ class _SkillCardState extends State<SkillCard>
     return MouseRegion(
       onEnter: (_) => setState(() => _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
-      child: AnimatedContainer(
-        duration: AppDurations.medium,
-        width: isMobile ? MediaQuery.of(context).size.width * 0.4 : 250,
-        padding: const EdgeInsets.all(25),
-        decoration: BoxDecoration(
-          color: _isHovered
-              ? AppColors.glassWhite10
-              : Colors.white.withValues(alpha: 0.05),
-          borderRadius: BorderRadius.circular(AppDimensions.borderRadiusLarge),
-          border: Border.all(
-            color: _isHovered ? AppColors.glassWhite30 : AppColors.glassWhite10,
+      child: GestureDetector(
+        onTapDown: (_) => setState(() => _isHovered = true),
+        onTapUp: (_) => setState(() => _isHovered = false),
+        onTapCancel: () => setState(() => _isHovered = false),
+        child: AnimatedContainer(
+          duration: AppDurations.medium,
+          width: isMobile ? MediaQuery.of(context).size.width * 0.4 : 250,
+          padding: const EdgeInsets.all(25),
+          decoration: BoxDecoration(
+            color: _isHovered
+                ? AppColors.glassWhite10
+                : Colors.white.withValues(alpha: 0.05),
+            borderRadius: BorderRadius.circular(
+              AppDimensions.borderRadiusLarge,
+            ),
+            border: Border.all(
+              color: _isHovered
+                  ? AppColors.glassWhite30
+                  : AppColors.glassWhite10,
+            ),
           ),
-        ),
-        child: Column(
-          children: [
-            FaIcon(widget.skill.icon, size: 50, color: AppColors.gradientCyan),
-            const SizedBox(height: 20),
-            Text(
-              widget.skill.name,
-              style: GoogleFonts.poppins(
-                fontSize: 20,
-                fontWeight: FontWeight.w600,
-                color: AppColors.textWhite,
+          child: Column(
+            children: [
+              FaIcon(
+                widget.skill.icon,
+                size: 50,
+                color: AppColors.gradientCyan,
               ),
-            ),
-            const SizedBox(height: 15),
-            AnimatedBuilder(
-              animation: _animation,
-              builder: (context, child) {
-                return Column(
-                  children: [
-                    LinearProgressIndicator(
-                      value: _animation.value,
-                      backgroundColor: AppColors.glassWhite10,
-                      valueColor: const AlwaysStoppedAnimation<Color>(
-                        AppColors.gradientCyan,
+              const SizedBox(height: 20),
+              Text(
+                widget.skill.name,
+                style: GoogleFonts.poppins(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.textWhite,
+                ),
+              ),
+              const SizedBox(height: 15),
+              AnimatedBuilder(
+                animation: _animation,
+                builder: (context, child) {
+                  return Column(
+                    children: [
+                      LinearProgressIndicator(
+                        value: _animation.value,
+                        backgroundColor: AppColors.glassWhite10,
+                        valueColor: const AlwaysStoppedAnimation<Color>(
+                          AppColors.gradientCyan,
+                        ),
+                        minHeight: 8,
+                        borderRadius: BorderRadius.circular(10),
                       ),
-                      minHeight: 8,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    const SizedBox(height: 10),
-                    Text(
-                      '${(_animation.value * 100).toInt()}%',
-                      style: GoogleFonts.poppins(
-                        fontSize: 16,
-                        color: AppColors.textWhite70,
+                      const SizedBox(height: 10),
+                      Text(
+                        '${(_animation.value * 100).toInt()}%',
+                        style: GoogleFonts.poppins(
+                          fontSize: 16,
+                          color: AppColors.textWhite70,
+                        ),
                       ),
-                    ),
-                  ],
-                );
-              },
-            ),
-          ],
+                    ],
+                  );
+                },
+              ),
+            ],
+          ),
         ),
       ),
     );
