@@ -151,10 +151,10 @@ This project is open source and available under the MIT License.
 
 ## 👤 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourusername)
-- Email: your.email@example.com
+**Hesham Reffat**
+- GitHub: [@HeshamReffat](https://github.com/HeshamReffat)
+- LinkedIn: [Hesham Reffat](https://linkedin.com/in/HeshamReffat)
+- Email: hesham.reffat@example.com
 
 ---
 

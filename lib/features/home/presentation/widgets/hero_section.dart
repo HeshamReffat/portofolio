@@ -70,12 +70,19 @@ class HeroSection extends StatelessWidget {
                               ),
                             ],
                           ),
-                          child: Image.asset(
-                            AppStrings.profilePicture,
-                            width: iconSize,
-                            height: iconSize,
-                            fit: BoxFit.cover,
-                          ),
+                          child: AppStrings.profilePicture.startsWith('http')
+                              ? Image.network(
+                                  AppStrings.profilePicture,
+                                  width: iconSize,
+                                  height: iconSize,
+                                  fit: BoxFit.cover,
+                                )
+                              : Image.asset(
+                                  AppStrings.profilePicture,
+                                  width: iconSize,
+                                  height: iconSize,
+                                  fit: BoxFit.cover,
+                                ),
                           // Icon(
                           //   Icons.person,
                           //   size: iconSize,
@@ -119,9 +126,12 @@ class HeroSection extends StatelessWidget {
                   ),
                   const SizedBox(height: 40),
                   // CTA Button
-                  GlowingButton(text: heroData.ctaText, onPressed: () {
-                    _launchURL("https://github.com/heshamreffat");
-                  }),
+                  GlowingButton(
+                    text: heroData.ctaText,
+                    onPressed: () {
+                      _launchURL("https://github.com/heshamreffat");
+                    },
+                  ),
                 ],
               ),
             ),
@@ -130,7 +140,8 @@ class HeroSection extends StatelessWidget {
       },
     );
   }
-    Future<void> _launchURL(String url) async {
+
+  Future<void> _launchURL(String url) async {
     final uri = Uri.parse(url);
     if (await canLaunchUrl(uri)) {
       await launchUrl(uri);

@@ -49,7 +49,8 @@ class AppStrings {
   static const String appTitle = 'Hesham Reffat Portfolio';
   static const String yourName = 'Hesham Reffat';
   static const String copyright = '© 2026 Hesham Reffat. All rights reserved.';
-  static const String profilePicture = 'images/profile.jpg';
+  static const String profilePicture =
+      'https://raw.githubusercontent.com/HeshamReffat/portofolio/main/assets/images/profile.jpg';
 
   // Navigation
   static const String navHome = 'Home';
