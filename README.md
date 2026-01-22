@@ -154,7 +154,8 @@ This project is open source and available under the MIT License.
 **Hesham Reffat**
 - GitHub: [@HeshamReffat](https://github.com/HeshamReffat)
 - LinkedIn: [Hesham Reffat](https://linkedin.com/in/HeshamReffat)
-- Email: hesham.reffat@example.com
+- Email: heshamreffat60@gmail.com
+- Phone: +201121317375
 
 ---
 
