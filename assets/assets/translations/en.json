@@ -131,5 +131,32 @@
       "title": "Besty Multi Vendor E-commerce",
       "description": "Robust, scalable, and user-friendly online shopping platform built with PHP Laravel."
     }
-  }
+  },
+  "skills_data": {
+    "flutter": "Flutter",
+    "dart": "Dart",
+    "android": "Android (Kotlin/Jetpack)",
+    "clean_arch": "Clean Arch & MVVM",
+    "state_mgmt": "State Management (Bloc/Riverpod/GetX)",
+    "laravel": "PHP Laravel",
+    "git": "Git/GitHub/GitLab",
+    "firebase": "Firebase & GraphQL",
+    "rest_api": "REST APIs Integration",
+    "google_maps": "Google Maps & Geolocation",
+    "payment": "Payment SDKs",
+    "local_db": "SQFlite/Hive/Local DB",
+    "ui_ux": "UI/UX Implementation",
+    "testing": "Unit & Integration Testing",
+    "problem_solving": "Problem Solving",
+    "time_mgmt": "Time Management"
+  },
+  "certificates_data": {
+    "android_nanodegree": "Android Developer Nanodegree",
+    "android_kotlin": "Mastering Android App Development with Kotlin [XML +COMPOSE]",
+    "kotlin_guide": "The Kotlin Learning Guide",
+    "ds_algo": "Master the Coding Interview: Data Structures + Algorithms",
+    "flutter_2022": "The Complete 2022 Flutter & Dart Development Course [Arabic]",
+    "flutter_2020": "The Complete Flutter Development Guide"
+  },
+  "view_credential": "View Credential"
 }

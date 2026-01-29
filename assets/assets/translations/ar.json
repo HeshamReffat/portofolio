@@ -65,5 +65,98 @@
       "period": "فبراير 2021 - نوفمبر 2021",
       "description": "• بناء تطبيقات هواتف محمولة متعددة المنصات لنظامي أندرويد و iOS.\n• التكامل مع واجهات برمجة التطبيقات والطابعات والماسحات الضوئية.\n• الرفع على App Store و Play Store."
     }
-  }
+  },
+  "project_data": {
+    "ovansales": {
+      "title": "O-VanSales",
+      "description": "تطبيق مبيعات وفواتير محمول متكامل مع O-Blue لتمكين مندوبي المبيعات من إنشاء الطلبات وإصدار وتسليم الفواتير وطباعة الإيصالات عبر البلوتوث بسهولة."
+    },
+    "fooj": {
+      "title": "Fooj",
+      "description": "منصة تربط أصحاب الإسطبلات بأصحاب الخيول. تساعد الملاك في العثور على أفضل الإسطبلات لتوفير الرعاية والاهتمام لخيولهم."
+    },
+    "cbevents": {
+      "title": "CB Events",
+      "description": "تطبيق إدارة الفعاليات لشركة Coldwell Banker. تبدأ الدورة بإضافة عميل محتمل مع فعالية، ويقوم موظفو العمليات بمسح رمز QR باستخدام التطبيق."
+    },
+    "cblink": {
+      "title": "CB Link",
+      "description": "أداة اتصال داخلية لشركة Coldwell Banker مصممة لتبسيط العمليات للمطورين العقاريين والوسطاء."
+    },
+    "cbegypt": {
+      "title": "Coldwell Banker Egypt",
+      "description": "منصة عقارية رائدة تعيد تعريف كيفية شراء وبيع وتأجير العقارات في مصر بواجهة سهلة الاستخدام وبديهية."
+    },
+    "aircairo": {
+      "title": "Air Cairo",
+      "description": "التطبيق الرسمي لشركة طيران إير كايرو. تم الترقية من Flutter 1 إلى Flutter 2 مع إشعارات الدفع والروابط العميقة."
+    },
+    "beyti": {
+      "title": "20Beyti",
+      "description": "متجر إلكتروني لتجربة تسوق سهلة وآمنة مع توصيل مجاني وآمن إلى عتبة المنزل وفوائد لا حصر لها."
+    },
+    "hawahadent": {
+      "title": "Hawaha Dent",
+      "description": "تطبيق إدارة عيادات الأسنان مع محطة راديو عبر الإنترنت وميزات مجتمع طب الأسنان النابض بالحياة."
+    },
+    "khamato": {
+      "title": "Khamato",
+      "description": "سوق عبر الإنترنت لمواد البناء والتشطيب، مصمم ليكون مركزاً تجارياً شاملاً."
+    },
+    "ceem": {
+      "title": "Ceem",
+      "description": "تطبيق للهواتف الذكية يمكنك من خلاله الحصول على آلاف الكوبونات وأكواد الخصم من الأماكن الشهيرة."
+    },
+    "quickseat": {
+      "title": "QuickSeat",
+      "description": "نظام حجز مباشر مناسب للنوادي والبارات والصالات والمطاعم وغيرها، مما يسمح بالحجز عبر الإنترنت."
+    },
+    "buybackart": {
+      "title": "BuyBackArt",
+      "description": "تطبيق لبيع الهواتف القديمة أو أجهزة الكمبيوتر المحمولة أو أي أجهزة إلكترونية. ابق متقدماً بخطوة من خلال البيع بأفضل سعر."
+    },
+    "growpharma": {
+      "title": "GrowPharma",
+      "description": "تطبيق لشركة طبية متخصصة في المكملات الغذائية."
+    },
+    "facility": {
+      "title": "Facility Management",
+      "description": "تطبيق سكني يدير المجمعات السكنية والمؤسسات الكبيرة بخدمات متنوعة."
+    },
+    "pos": {
+      "title": "POS (Vendor & User)",
+      "description": "تطبيق نقاط البيع لإدارة الأسواق والصيدليات وغيرها. تطبيق للمستخدم لعرض الفواتير والدفع."
+    },
+    "besty": {
+      "title": "Besty Multi Vendor E-commerce",
+      "description": "منصة تسوق إلكترونية قوية وقابلة للتطوير وسهلة الاستخدام تم بناؤها باستخدام PHP Laravel."
+    }
+  },
+  "skills_data": {
+    "flutter": "فلاتر (Flutter)",
+    "dart": "دارت (Dart)",
+    "android": "أندرويد (Kotlin/Jetpack)",
+    "clean_arch": "البنية النظيفة و MVVM",
+    "state_mgmt": "إدارة الحالة (Bloc/Riverpod/GetX)",
+    "laravel": "بي اتش بي لارافيل",
+    "git": "Git/GitHub/GitLab",
+    "firebase": "Firebase & GraphQL",
+    "rest_api": "تكامل REST APIs",
+    "google_maps": "خرائط جوجل وتحديد الموقع",
+    "payment": "SDKs الدفع",
+    "local_db": "قواعد البيانات المحلية (SQFlite/Hive)",
+    "ui_ux": "تنفيذ UI/UX",
+    "testing": "اختبارات الوحدة والتكامل",
+    "problem_solving": "حل المشكلات",
+    "time_mgmt": "إدارة الوقت"
+  },
+  "certificates_data": {
+    "android_nanodegree": "درجة النانو لمطور أندرويد",
+    "android_kotlin": "احتراف تطوير تطبيقات أندرويد باستخدام Kotlin [XML +COMPOSE]",
+    "kotlin_guide": "دليل تعلم Kotlin",
+    "ds_algo": "احتراف مقابلة البرمجة: هياكل البيانات + الخوارزميات",
+    "flutter_2022": "دورة تطوير Flutter & Dart الكاملة 2022 [بالعربية]",
+    "flutter_2020": "دليل تطوير Flutter الكامل"
+  },
+  "view_credential": "عرض الشهادة"
 }
