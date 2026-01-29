@@ -18,8 +18,8 @@ void main() async {
   runApp(
     EasyLocalization(
       supportedLocales: const [Locale('en'), Locale('ar')],
-      path: 'assets/translations',
-      startLocale: const Locale('ar'),
+      path: 'translations',
+      startLocale: const Locale('en'),
       fallbackLocale: const Locale('en'),
       child: const PortfolioApp(),
     ),

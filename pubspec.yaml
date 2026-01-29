@@ -40,8 +40,12 @@ flutter:
 
 assets:
   - assets/images/
-  - assets/icons/
+  - assets/images/profile.jpg
+  - assets/icon/
+  - assets/icon/icon.png
   - assets/translations/
+  - assets/translations/ar.json
+  - assets/translations/en.json
 
 flutter_native_splash:
   color: "#0A0E27"
