@@ -28,7 +28,7 @@ class ContactSection extends StatelessWidget {
         children: [
           Text(
             AppStrings.contactTitle,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: isMobile ? 36 : 48,
               fontWeight: FontWeight.bold,
               color: AppColors.textWhite,
@@ -38,7 +38,7 @@ class ContactSection extends StatelessWidget {
           Text(
             AppStrings.ctaContactMe,
             textAlign: TextAlign.center,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: isMobile ? 16 : 20,
               color: AppColors.textWhite70,
             ),
@@ -70,7 +70,7 @@ class ContactSection extends StatelessWidget {
           const SizedBox(height: 50),
           Text(
             AppStrings.copyright,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: 14,
               color: AppColors.textWhite50,
             ),

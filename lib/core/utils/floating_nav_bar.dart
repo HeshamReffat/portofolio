@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../core/constants/app_constants.dart';
 
 class FloatingNavBar extends StatelessWidget {
@@ -43,7 +44,43 @@ class FloatingNavBar extends StatelessWidget {
               _NavItem(AppStrings.navCertificates, () => onNavigate(5)),
               const SizedBox(width: 20),
               _NavItem(AppStrings.navContact, () => onNavigate(6)),
+              const SizedBox(width: 20),
+              const _LanguageToggle(),
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _LanguageToggle extends StatelessWidget {
+  const _LanguageToggle();
+
+  @override
+  Widget build(BuildContext context) {
+    final isArabic = context.locale.languageCode == 'ar';
+    return InkWell(
+      onTap: () {
+        if (isArabic) {
+          context.setLocale(const Locale('en'));
+        } else {
+          context.setLocale(const Locale('ar'));
+        }
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: AppColors.accentPurple.withValues(alpha: 0.3),
+          borderRadius: BorderRadius.circular(15),
+          border: Border.all(color: AppColors.gradientCyan.withValues(alpha: 0.5)),
+        ),
+        child: Text(
+          isArabic ? 'English' : 'العربية',
+          style: GoogleFonts.cairo(
+            color: AppColors.textWhite,
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ),
@@ -80,7 +117,7 @@ class _NavItemState extends State<_NavItem> {
           ),
           child: Text(
             widget.title,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               color: AppColors.textWhite,
               fontSize: 16,
               fontWeight: _isHovered ? FontWeight.w600 : FontWeight.w400,

@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../../../core/utils/animated_background.dart';
@@ -112,22 +113,33 @@ class _HomePageState extends State<HomePage>
     return Scaffold(
       backgroundColor: AppColors.primaryDark,
       body: Stack(
+        key: ValueKey(context.locale.languageCode),
         children: [
           // Animated background gradient
           const AnimatedBackground(),
           // Main content
-          SingleChildScrollView(
-            controller: _scrollController,
-            child: Column(
-              children: [
-                HeroSection(key: _homeKey, fadeAnimation: _fadeAnimation),
-                AboutSection(key: _aboutKey),
-                ExperienceSection(key: _experienceKey),
-                ProjectsSection(key: _projectsKey),
-                SkillsSection(key: _skillsKey),
-                CertificatesSection(key: _certificatesKey),
-                ContactSection(key: _contactKey),
-              ],
+          RefreshIndicator(
+            onRefresh: () async {
+              context.read<HomeViewModel>().loadHeroData();
+              context.read<ProjectsViewModel>().loadProjects();
+              context.read<SkillsViewModel>().loadSkills();
+              context.read<CertificatesViewModel>().loadCertificates();
+              context.read<ExperienceViewModel>().loadExperience();
+            },
+            child: SingleChildScrollView(
+              physics: const AlwaysScrollableScrollPhysics(),
+              controller: _scrollController,
+              child: Column(
+                children: [
+                  HeroSection(key: _homeKey, fadeAnimation: _fadeAnimation),
+                  AboutSection(key: _aboutKey),
+                  ExperienceSection(key: _experienceKey),
+                  ProjectsSection(key: _projectsKey),
+                  SkillsSection(key: _skillsKey),
+                  CertificatesSection(key: _certificatesKey),
+                  ContactSection(key: _contactKey),
+                ],
+              ),
             ),
           ),
           // Floating navigation bar

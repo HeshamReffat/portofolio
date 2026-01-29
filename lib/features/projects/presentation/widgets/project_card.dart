@@ -76,7 +76,7 @@ class _ProjectCardState extends State<ProjectCard> {
                 const SizedBox(height: 20),
                 Text(
                   widget.project.title,
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.cairo(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: AppColors.textWhite,
@@ -85,7 +85,7 @@ class _ProjectCardState extends State<ProjectCard> {
                 const SizedBox(height: 15),
                 Text(
                   widget.project.description,
-                  style: GoogleFonts.poppins(
+                  style: GoogleFonts.cairo(
                     fontSize: 16,
                     color: AppColors.textWhite70,
                     height: 1.5,
@@ -110,7 +110,7 @@ class _ProjectCardState extends State<ProjectCard> {
                       ),
                       child: Text(
                         tech,
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.cairo(
                           fontSize: 12,
                           color: AppColors.textWhite,
                           fontWeight: FontWeight.w500,

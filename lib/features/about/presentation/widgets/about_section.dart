@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/constants/app_constants.dart';
 
 class AboutSection extends StatelessWidget {
@@ -19,7 +20,7 @@ class AboutSection extends StatelessWidget {
         children: [
           Text(
             AppStrings.aboutTitle,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: isMobile ? 36 : 48,
               fontWeight: FontWeight.bold,
               color: AppColors.textWhite,
@@ -36,13 +37,9 @@ class AboutSection extends StatelessWidget {
               border: Border.all(color: AppColors.glassWhite10),
             ),
             child: Text(
-              'Senior Flutter Developer with 4+ years of experience in creating high-performance, cross-platform mobile applications. '
-              'Expert in Dart and Flutter, with a proven track record of delivering user-friendly and scalable solutions for both iOS and Android platforms. '
-              'Also proficient as an Android Developer (Clean Architecture, MVVM) and PHP Laravel Developer. '
-              'I hold a License of Law from Ain Shams University (2020), which has refined my logical thinking and problem-solving skills. '
-              'I am passionate about staying updated with the latest industry trends and I am looking for challenging work that can add more real-life knowledge and skills to my career.',
+              'about_text'.tr(),
               textAlign: TextAlign.center,
-              style: GoogleFonts.poppins(
+              style: GoogleFonts.cairo(
                 fontSize: isMobile ? 16 : 20,
                 color: AppColors.textWhite.withValues(alpha: 0.8),
                 height: 1.8,

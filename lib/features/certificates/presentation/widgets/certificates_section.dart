@@ -23,7 +23,7 @@ class CertificatesSection extends StatelessWidget {
         children: [
           Text(
             'Certifications',
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: isMobile ? 36 : 48,
               fontWeight: FontWeight.bold,
               color: AppColors.textWhite,
@@ -120,7 +120,7 @@ class _CertificateCardState extends State<_CertificateCard> {
               const SizedBox(height: 20),
               Text(
                 widget.certificate.title,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.cairo(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -129,7 +129,7 @@ class _CertificateCardState extends State<_CertificateCard> {
               const SizedBox(height: 10),
               Text(
                 widget.certificate.issuer,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.cairo(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
                   color: AppColors.accentCyan,
@@ -138,7 +138,7 @@ class _CertificateCardState extends State<_CertificateCard> {
               const SizedBox(height: 5),
               Text(
                 widget.certificate.date,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.cairo(
                   fontSize: 12,
                   color: Colors.white.withOpacity(0.6),
                 ),
@@ -148,7 +148,7 @@ class _CertificateCardState extends State<_CertificateCard> {
                 children: [
                   Text(
                     'View Credential',
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.cairo(
                       fontSize: 12,
                       color: _isHovered
                           ? AppColors.accentPurple

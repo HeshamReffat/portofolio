@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 // App Colors
 class AppColors {
@@ -46,31 +47,32 @@ class AppDimensions {
 
 // App Strings
 class AppStrings {
-  static const String appTitle = 'Hesham Reffat Portfolio';
-  static const String yourName = 'Hesham Reffat';
-  static const String copyright = '© 2026 Hesham Reffat. All rights reserved.';
+  static String get appTitle => 'appTitle'.tr();
+  static String get yourName => 'yourName'.tr();
+  static String get copyright => 'copyright'.tr();
   static const String profilePicture =
       'https://raw.githubusercontent.com/HeshamReffat/portofolio/main/assets/images/profile.jpg';
 
   // Navigation
-  static const String navHome = 'Home';
-  static const String navAbout = 'About';
-  static const String navProjects = 'Projects';
-  static const String navExperience = 'Experience';
-  static const String navSkills = 'Skills';
-  static const String navCertificates = 'Certificates';
-  static const String navContact = 'Contact';
+  static String get navHome => 'nav.home'.tr();
+  static String get navAbout => 'nav.about'.tr();
+  static String get navProjects => 'nav.projects'.tr();
+  static String get navExperience => 'nav.experience'.tr();
+  static String get navSkills => 'nav.skills'.tr();
+  static String get navCertificates => 'nav.certificates'.tr();
+  static String get navContact => 'nav.contact'.tr();
 
   // Sections
-  static const String aboutTitle = 'About Me';
-  static const String projectsTitle = 'Featured Projects';
-  static const String skillsTitle = 'Skills & Expertise';
-  static const String contactTitle = 'Get In Touch';
+  static String get aboutTitle => 'sections.about'.tr();
+  static String get projectsTitle => 'sections.projects'.tr();
+  static String get skillsTitle => 'sections.skills'.tr();
+  static String get experienceTitle => 'sections.experience'.tr();
+  static String get certificatesTitle => 'sections.certificates'.tr();
+  static String get contactTitle => 'sections.contact'.tr();
 
   // CTA
-  static const String ctaViewWork = 'View My Work';
-  static const String ctaContactMe =
-      'Let\'s work together on your next project';
+  static String get ctaViewWork => 'cta.viewWork'.tr();
+  static String get ctaContactMe => 'cta.contactMe'.tr();
 }
 
 // Animation Durations

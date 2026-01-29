@@ -8,7 +8,7 @@ class AppTheme {
       brightness: Brightness.dark,
       primarySwatch: Colors.blue,
       scaffoldBackgroundColor: AppColors.primaryDark,
-      textTheme: GoogleFonts.poppinsTextTheme(
+      textTheme: GoogleFonts.cairoTextTheme(
         ThemeData.dark().textTheme,
       ),
       colorScheme: const ColorScheme.dark(

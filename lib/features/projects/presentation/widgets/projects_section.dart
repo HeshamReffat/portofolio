@@ -28,7 +28,7 @@ class ProjectsSection extends StatelessWidget {
             children: [
               Text(
                 AppStrings.projectsTitle,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.cairo(
                   fontSize: isMobile ? 36 : 48,
                   fontWeight: FontWeight.bold,
                   color: AppColors.textWhite,

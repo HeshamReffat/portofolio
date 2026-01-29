@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'core/theme/app_theme.dart';
 import 'core/constants/app_constants.dart';
 import 'core/di/injection_container.dart';
@@ -12,8 +13,17 @@ import 'features/experience/presentation/viewmodels/experience_viewmodel.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
   await initializeDependencies();
-  runApp(const PortfolioApp());
+  runApp(
+    EasyLocalization(
+      supportedLocales: const [Locale('en'), Locale('ar')],
+      path: '/translations',
+      startLocale: const Locale('ar'),
+      fallbackLocale: const Locale('en'),
+      child: const PortfolioApp(),
+    ),
+  );
 }
 
 class PortfolioApp extends StatelessWidget {
@@ -33,6 +43,9 @@ class PortfolioApp extends StatelessWidget {
         title: AppStrings.appTitle,
         debugShowCheckedModeBanner: false,
         theme: AppTheme.darkTheme,
+        localizationsDelegates: context.localizationDelegates,
+        supportedLocales: context.supportedLocales,
+        locale: context.locale,
         home: const HomePage(),
       ),
     );

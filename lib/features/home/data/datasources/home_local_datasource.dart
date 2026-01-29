@@ -11,13 +11,13 @@ class HomeLocalDataSourceImpl implements HomeLocalDataSource {
     await Future.delayed(const Duration(milliseconds: 100));
     
     return const HeroDataModel(
-      name: 'Hesham Reffat',
+      name: 'yourName',
       roles: [
-        'Senior Flutter Developer',
-        'Android Developer',
-        'PHP Laravel Developer',
+        'roles.senior_flutter',
+        'roles.android',
+        'roles.laravel',
       ],
-      ctaText: 'View My Work',
+      ctaText: 'cta.viewWork',
     );
   }
 }

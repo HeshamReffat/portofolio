@@ -16,12 +16,14 @@ dependencies:
   provider: ^6.1.2
   get_it: ^8.0.2
   equatable: ^2.0.7
+  easy_localization: ^3.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
   flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.7
 
 flutter_icons:
   android: false
@@ -39,3 +41,11 @@ flutter:
 assets:
   - assets/images/
   - assets/icons/
+  - assets/translations/
+
+flutter_native_splash:
+  color: "#0A0E27"
+  image: assets/icon/icon.png
+  android: true
+  ios: true
+  web: true

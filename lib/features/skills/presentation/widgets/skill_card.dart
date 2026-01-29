@@ -78,7 +78,7 @@ class _SkillCardState extends State<SkillCard>
               const SizedBox(height: 20),
               Text(
                 widget.skill.name,
-                style: GoogleFonts.poppins(
+                style: GoogleFonts.cairo(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                   color: AppColors.textWhite,
@@ -102,7 +102,7 @@ class _SkillCardState extends State<SkillCard>
                       const SizedBox(height: 10),
                       Text(
                         '${(_animation.value * 100).toInt()}%',
-                        style: GoogleFonts.poppins(
+                        style: GoogleFonts.cairo(
                           fontSize: 16,
                           color: AppColors.textWhite70,
                         ),

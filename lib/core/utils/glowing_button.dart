@@ -53,7 +53,7 @@ class _GlowingButtonState extends State<GlowingButton> {
           ),
           child: Text(
             widget.text,
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: 18,
               fontWeight: FontWeight.w600,
               color: AppColors.textWhite,

@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../../../core/utils/glowing_button.dart';
 import '../viewmodels/home_viewmodel.dart';
@@ -95,9 +96,9 @@ class HeroSection extends StatelessWidget {
                   const SizedBox(height: 40),
                   // Name
                   Text(
-                    heroData.name,
+                    heroData.name.tr(),
                     textAlign: TextAlign.center,
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.cairo(
                       fontSize: nameFontSize,
                       fontWeight: FontWeight.bold,
                       color: AppColors.textWhite,
@@ -112,9 +113,9 @@ class HeroSection extends StatelessWidget {
                       repeatForever: true,
                       animatedTexts: heroData.roles.map((role) {
                         return TypewriterAnimatedText(
-                          role,
+                          role.tr(),
                           textAlign: TextAlign.center,
-                          textStyle: GoogleFonts.poppins(
+                          textStyle: GoogleFonts.cairo(
                             fontSize: roleFontSize,
                             fontWeight: FontWeight.w300,
                             color: AppColors.gradientCyan,
@@ -127,7 +128,7 @@ class HeroSection extends StatelessWidget {
                   const SizedBox(height: 40),
                   // CTA Button
                   GlowingButton(
-                    text: heroData.ctaText,
+                    text: heroData.ctaText.tr(),
                     onPressed: () {
                       _launchURL("https://github.com/heshamreffat");
                     },

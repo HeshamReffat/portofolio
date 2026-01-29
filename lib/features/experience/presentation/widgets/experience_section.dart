@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../viewmodels/experience_viewmodel.dart';
 
@@ -15,7 +16,7 @@ class ExperienceSection extends StatelessWidget {
         children: [
           Text(
             'Work Experience',
-            style: GoogleFonts.poppins(
+            style: GoogleFonts.cairo(
               fontSize: 48,
               fontWeight: FontWeight.bold,
               color: AppColors.textWhite,
@@ -99,8 +100,8 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              widget.experience.role,
-                              style: GoogleFonts.poppins(
+                              (widget.experience.role as String).tr(),
+                              style: GoogleFonts.cairo(
                                 fontSize: 18,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -117,8 +118,8 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text(
-                                widget.experience.period,
-                                style: GoogleFonts.poppins(
+                                (widget.experience.period as String).tr(),
+                                style: GoogleFonts.cairo(
                                   fontSize: 12,
                                   color: AppColors.textWhite,
                                 ),
@@ -130,8 +131,8 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              widget.experience.role,
-                              style: GoogleFonts.poppins(
+                              (widget.experience.role as String).tr(),
+                              style: GoogleFonts.cairo(
                                 fontSize: 24,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
@@ -147,8 +148,8 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text(
-                                widget.experience.period,
-                                style: GoogleFonts.poppins(
+                                (widget.experience.period as String).tr(),
+                                style: GoogleFonts.cairo(
                                   fontSize: 14,
                                   color: AppColors.textWhite,
                                 ),
@@ -159,7 +160,7 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                   const SizedBox(height: 10),
                   Text(
                     widget.experience.company,
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.cairo(
                       fontSize: 18,
                       color: AppColors.accentCyan,
                       fontWeight: FontWeight.w500,
@@ -167,8 +168,8 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                   ),
                   const SizedBox(height: 20),
                   Text(
-                    widget.experience.description,
-                    style: GoogleFonts.poppins(
+                    (widget.experience.description as String).tr(),
+                    style: GoogleFonts.cairo(
                       fontSize: 16,
                       color: Colors.white.withOpacity(0.8),
                       height: 1.6,
@@ -194,7 +195,7 @@ class _ExperienceCardState extends State<_ExperienceCard> {
                             ),
                             child: Text(
                               tech,
-                              style: GoogleFonts.poppins(
+                              style: GoogleFonts.cairo(
                                 fontSize: 12,
                                 color: Colors.white.withOpacity(0.7),
                               ),
