@@ -21211,7 +21211,7 @@ k.aW()
 k.S2(null,null,p)
 q.ch$!==$&&A.aO()
 q.ch$=k
-l=k}q.NI(new A.ye(n,new A.uk(B.a_j,B.Up,B.jB,B.jA,"/translations",null),m,l,null))
+l=k}q.NI(new A.ye(n,new A.uk(B.a_j,B.Up,B.jB,B.jA,"assets/translations",null),m,l,null))
 q.C5()
 return A.C(null,r)}})
 return A.D($async$Vb,r)},
