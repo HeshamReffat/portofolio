@@ -1,0 +1,135 @@
+{
+  "appTitle": "Hesham Reffat Portfolio",
+  "yourName": "Hesham Reffat",
+  "copyright": "© 2026 Hesham Reffat. All rights reserved.",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "skills": "Skills",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  },
+  "sections": {
+    "about": "About Me",
+    "projects": "Featured Projects",
+    "skills": "Skills & Expertise",
+    "experience": "Work Experience",
+    "certificates": "Certificates",
+    "contact": "Get In Touch"
+  },
+  "cta": {
+    "viewWork": "View My Work",
+    "contactMe": "Let's work together on your next project"
+  },
+  "roles": {
+    "senior_flutter": "Senior Flutter Developer",
+    "android": "Android Developer",
+    "laravel": "PHP Laravel Developer"
+  },
+  "about_text": "Senior Flutter Developer with 4+ years of experience in creating high-performance, cross-platform mobile applications. Expert in Dart and Flutter, with a proven track record of delivering user-friendly and scalable solutions for both iOS and Android platforms. Also proficient as an Android Developer (Clean Architecture, MVVM) and PHP Laravel Developer. I hold a License of Law from Ain Shams University (2020), which has refined my logical thinking and problem-solving skills. I am passionate about staying updated with the latest industry trends and I am looking for challenging work that can add more real-life knowledge and skills to my career.",
+  "experience": {
+    "microtec": {
+      "role": "Senior Flutter Developer",
+      "period": "November 2024 - Present",
+      "description": "• MicrotecSaudi offers IT system data services, focusing on cloud ERP solutions.\n• Building Mobile ERP Apps CrossPlatform for android and IOS.\n• Integrating with apis and native SDKs.\n• Use local database and creating flutter packages.\n• Collaboration with team to solve difficult problems or tasks."
+    },
+    "emotion": {
+      "role": "Senior Flutter Developer",
+      "period": "February 2022 - November 2024",
+      "description": "• E-motion digital creative solutions agency established in June 1998 in Egypt.\n• Building Mobile E-Commerce Apps CrossPlatform for android and IOS.\n• Integration with native SDKs and apis.\n• Pushing to app gallery, app store and play store."
+    },
+    "ims": {
+      "role": "Senior Flutter Developer",
+      "period": "March 2024 - April 2024",
+      "description": "• Developed mobile applications using Flutter, Dart, and Firebase.\n• Met customer expectations with fast loading time, fresh UI/UX, and easy navigation.\n• Pushing to app store and play store."
+    },
+    "quickseat": {
+      "role": "Senior Flutter Developer",
+      "period": "May 2023 – December 2023",
+      "description": "• Building Mobile Reservation Management App CrossPlatform for android and IOS.\n• Developed using Flutter, Dart, and Firebase.\n• Pushing to app store and play store."
+    },
+    "buybackart": {
+      "role": "Senior Flutter Developer",
+      "period": "March 2023 - August 2023",
+      "description": "• Developed cross-platform mobile applications using Flutter and Dart.\n• Deployed to both Apple App Store and Google Play.\n• Integrating with apis and native SDKs."
+    },
+    "witfit": {
+      "role": "Flutter Developer",
+      "period": "February 2022 – October 2023",
+      "description": "• WitFit offers a tailored course with courses, lectures, chats, exercises, etc.\n• Composed for the best possible mental training and development.\n• Professional psychologists, therapists and coaches guide you effectively."
+    },
+    "readyworx": {
+      "role": "Flutter Developer",
+      "period": "February 2021 - November 2021",
+      "description": "• Building Mobile Apps CrossPlatform for android and IOS.\n• Integrating with apis, printers and scanners.\n• Pushing to app store and play store."
+    }
+  },
+  "project_data": {
+    "ovansales": {
+      "title": "O-VanSales",
+      "description": "Mobile Sales & Invoicing Application integrated with O-Blue to enable sales reps to effortlessly create orders, issue and deliver invoices, and print receipts via Bluetooth."
+    },
+    "fooj": {
+      "title": "Fooj",
+      "description": "Platform connecting stable owners with horse owners. Helps owners find the best stables to provide care and attention to their horses."
+    },
+    "cbevents": {
+      "title": "CB Events",
+      "description": "Event management app for Coldwell Banker. Cycle begins with addition of a lead with an event, operations staff scan QR code using the app."
+    },
+    "cblink": {
+      "title": "CB Link",
+      "description": "Internal communication tool for Coldwell Banker designed to streamline operations for real estate developers and brokers."
+    },
+    "cbegypt": {
+      "title": "Coldwell Banker Egypt",
+      "description": "Premier real estate platform redefining how you buy, sell, and rent properties in Egypt with intuitive user-friendly interface."
+    },
+    "aircairo": {
+      "title": "Air Cairo",
+      "description": "Official mobile application for Air Cairo airline. Upgraded from Flutter 1 to Flutter 2 with push notifications and deep links."
+    },
+    "beyti": {
+      "title": "20Beyti",
+      "description": "Online store for easy & safe shopping experience with free & safe delivery to doorsteps and endless benefits."
+    },
+    "hawahadent": {
+      "title": "Hawaha Dent",
+      "description": "Dental clinic management application with online radio station and vibrant dental community features."
+    },
+    "khamato": {
+      "title": "Khamato",
+      "description": "Online market for building and finishing materials, designed to be a comprehensive commercial center."
+    },
+    "ceem": {
+      "title": "Ceem",
+      "description": "Smartphone application through which you can get thousands of coupons and discount codes from famous places."
+    },
+    "quickseat": {
+      "title": "QuickSeat",
+      "description": "Live reservation system suitable for clubs, bars, lounges, restaurants, etc., allowing online bookings."
+    },
+    "buybackart": {
+      "title": "BuyBackArt",
+      "description": "App for selling old phones, laptops or any electronic devices. Stay a step ahead by selling at best price."
+    },
+    "growpharma": {
+      "title": "GrowPharma",
+      "description": "Medical company application specializing in food supplements."
+    },
+    "facility": {
+      "title": "Facility Management",
+      "description": "Resident application that manages compounds and large institutions with various services."
+    },
+    "pos": {
+      "title": "POS (Vendor & User)",
+      "description": "POS application for managing markets, pharmacies, etc. User app to view bills and pay."
+    },
+    "besty": {
+      "title": "Besty Multi Vendor E-commerce",
+      "description": "Robust, scalable, and user-friendly online shopping platform built with PHP Laravel."
+    }
+  }
+}
