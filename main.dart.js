@@ -21211,7 +21211,7 @@ k.aW()
 k.S2(null,null,p)
 q.ch$!==$&&A.aO()
 q.ch$=k
-l=k}q.NI(new A.ye(n,new A.uk(B.a_j,B.Up,B.h4,B.h4,"translations",null),m,l,null))
+l=k}q.NI(new A.ye(n,new A.uk(B.a_j,B.Up,B.h4,B.h4,"assets/translations",null),m,l,null))
 q.C5()
 return A.C(null,r)}})
 return A.D($async$Vb,r)},
@@ -65738,7 +65738,7 @@ j=A.a0(new A.ah(B.jp,new A.a_A(o),j),j.h("ao.E"))
 return A.d1(i,A.FI(A.WG(A.ey(A.c([new A.qq(new A.av(0,1,t.Y),new A.a_B(n,m),B.T,B.cN,i,i,t.HN),B.CW,k,B.ct,A.alL(new A.rZ(j,!0,i),60,i),B.CW,new A.uR(A.cL("cta.viewWork"),new A.a_C(l),i)],t.p),B.aq,B.jP,B.ah),i,i),l.c),B.x,i,i,i,i,s.a.b,i,new A.b3(q,0,q,0),i,i,i)},
 $S:448}
 A.a_B.prototype={
-$3(a,b,c){var s=null,r="images/profile.jpg",q=this.a,p=A.c([new A.e0(5,B.bI,B.c7.c6(0.5),B.l,30)],t.V),o=this.b
+$3(a,b,c){var s=null,r="assets/images/profile.jpg",q=this.a,p=A.c([new A.e0(5,B.bI,B.c7.c6(0.5),B.l,30)],t.V),o=this.b
 if(B.d.aV(r,"http"))o=new A.mz(A.aqI(s,s,new A.py(r,1,s,B.a6N)),o,o,B.l5,s)
 else o=new A.mz(A.aqI(s,s,new A.ta(r,s,s)),o,o,B.l5,s)
 return A.ark(A.d1(s,o,B.cM,s,s,new A.cn(s,s,s,s,p,B.Ll,B.dq),s,q,s,s,s,s,q),b)},
