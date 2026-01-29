@@ -39,7 +39,8 @@ class AboutSection extends StatelessWidget {
               'Senior Flutter Developer with 4+ years of experience in creating high-performance, cross-platform mobile applications. '
               'Expert in Dart and Flutter, with a proven track record of delivering user-friendly and scalable solutions for both iOS and Android platforms. '
               'Also proficient as an Android Developer (Clean Architecture, MVVM) and PHP Laravel Developer. '
-              'Passionate about staying updated with the latest industry trends and best practices.',
+              'I hold a License of Law from Ain Shams University (2020), which has refined my logical thinking and problem-solving skills. '
+              'I am passionate about staying updated with the latest industry trends and I am looking for challenging work that can add more real-life knowledge and skills to my career.',
               textAlign: TextAlign.center,
               style: GoogleFonts.poppins(
                 fontSize: isMobile ? 16 : 20,

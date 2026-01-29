@@ -41,7 +41,7 @@ class CertificatesLocalDataSourceImpl implements CertificatesLocalDataSource {
       CertificateModel(
         title: 'The Complete 2022 Flutter & Dart Development Course [Arabic]',
         issuer: 'Udemy',
-        date: '2023',
+        date: '2022',
         credentialUrl:
             'https://www.udemy.com/certificate/UC-c57f2f56-8941-4b04-95a4-fd4dff5dcf3f/',
       ),

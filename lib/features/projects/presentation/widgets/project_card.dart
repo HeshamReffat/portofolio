@@ -30,7 +30,9 @@ class _ProjectCardState extends State<ProjectCard> {
         child: AnimatedContainer(
           duration: AppDurations.medium,
           width: isMobile ? MediaQuery.of(context).size.width * 0.9 : 350,
-          height: 400,
+          constraints: const BoxConstraints(
+            minHeight: 450,
+          ),
           transform: Matrix4.translationValues(
             0.0,
             _isHovered ? -10.0 : 0.0,
@@ -68,6 +70,7 @@ class _ProjectCardState extends State<ProjectCard> {
             padding: const EdgeInsets.all(30),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(Icons.code, size: 50, color: widget.project.color),
                 const SizedBox(height: 20),
@@ -88,7 +91,7 @@ class _ProjectCardState extends State<ProjectCard> {
                     height: 1.5,
                   ),
                 ),
-                const Spacer(),
+                const SizedBox(height: 30),
                 Wrap(
                   spacing: 10,
                   runSpacing: 10,
