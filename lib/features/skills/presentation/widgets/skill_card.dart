@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../domain/entities/skill.dart';
 
@@ -77,7 +78,8 @@ class _SkillCardState extends State<SkillCard>
               ),
               const SizedBox(height: 20),
               Text(
-                widget.skill.name,
+                widget.skill.name.tr(),
+                textAlign: TextAlign.center,
                 style: GoogleFonts.cairo(
                   fontSize: 20,
                   fontWeight: FontWeight.w600,

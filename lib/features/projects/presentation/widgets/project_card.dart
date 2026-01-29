@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../../domain/entities/project.dart';
 
@@ -75,7 +76,7 @@ class _ProjectCardState extends State<ProjectCard> {
                 Icon(Icons.code, size: 50, color: widget.project.color),
                 const SizedBox(height: 20),
                 Text(
-                  widget.project.title,
+                  widget.project.title.tr(),
                   style: GoogleFonts.cairo(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -84,7 +85,7 @@ class _ProjectCardState extends State<ProjectCard> {
                 ),
                 const SizedBox(height: 15),
                 Text(
-                  widget.project.description,
+                  widget.project.description.tr(),
                   style: GoogleFonts.cairo(
                     fontSize: 16,
                     color: AppColors.textWhite70,

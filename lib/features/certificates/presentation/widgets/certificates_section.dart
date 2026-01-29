@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../../../../core/constants/app_constants.dart';
 import '../viewmodels/certificates_viewmodel.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -22,7 +23,7 @@ class CertificatesSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Certifications',
+            AppStrings.certificatesTitle,
             style: GoogleFonts.cairo(
               fontSize: isMobile ? 36 : 48,
               fontWeight: FontWeight.bold,
@@ -119,7 +120,7 @@ class _CertificateCardState extends State<_CertificateCard> {
               ),
               const SizedBox(height: 20),
               Text(
-                widget.certificate.title,
+                (widget.certificate.title as String).tr(),
                 style: GoogleFonts.cairo(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -147,7 +148,7 @@ class _CertificateCardState extends State<_CertificateCard> {
               Row(
                 children: [
                   Text(
-                    'View Credential',
+                    'view_credential'.tr(),
                     style: GoogleFonts.cairo(
                       fontSize: 12,
                       color: _isHovered

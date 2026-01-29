@@ -12,114 +12,98 @@ class ProjectsLocalDataSourceImpl implements ProjectsLocalDataSource {
 
     return const [
       ProjectModel(
-        title: 'O-VanSales',
-        description:
-            'Mobile Sales & Invoicing Application integrated with O-Blue to enable sales reps to effortlessly create orders, issue and deliver invoices, and print receipts via Bluetooth.',
+        title: 'project_data.ovansales.title',
+        description: 'project_data.ovansales.description',
         technologies: ['Flutter', 'O-Blue', 'Bluetooth', 'ERP'],
         color: Colors.blue,
       ),
       ProjectModel(
-        title: 'Fooj',
-        description:
-            'Platform connecting stable owners with horse owners. Helps owners find the best stables to provide care and attention to their horses.',
+        title: 'project_data.fooj.title',
+        description: 'project_data.fooj.description',
         technologies: ['Flutter', 'Stable Management', 'UI/UX'],
         color: Colors.brown,
       ),
       ProjectModel(
-        title: 'CB Events',
-        description:
-            'Event management app for Coldwell Banker. Cycle begins with addition of a lead with an event, operations staff scan QR code using the app.',
+        title: 'project_data.cbevents.title',
+        description: 'project_data.cbevents.description',
         technologies: ['Flutter', 'QR Code', 'MVVM', 'Hive'],
         color: Colors.purple,
       ),
       ProjectModel(
-        title: 'CB Link',
-        description:
-            'Internal communication tool for Coldwell Banker designed to streamline operations for real estate developers and brokers.',
+        title: 'project_data.cblink.title',
+        description: 'project_data.cblink.description',
         technologies: ['Flutter', 'Rest API', 'Notifications', 'Bloc'],
         color: Colors.indigo,
       ),
       ProjectModel(
-        title: 'Coldwell Banker Egypt',
-        description:
-            'Premier real estate platform redefining how you buy, sell, and rent properties in Egypt with intuitive user-friendly interface.',
+        title: 'project_data.cbegypt.title',
+        description: 'project_data.cbegypt.description',
         technologies: ['Flutter', 'Google Maps', 'Geocoding', 'Real Estate'],
         color: Colors.blueGrey,
       ),
       ProjectModel(
-        title: 'Air Cairo',
-        description:
-            'Official mobile application for Air Cairo airline. Upgraded from Flutter 1 to Flutter 2 with push notifications and deep links.',
+        title: 'project_data.aircairo.title',
+        description: 'project_data.aircairo.description',
         technologies: ['Flutter', 'Deep Links', 'Firebase', 'Booking'],
         color: Colors.blueAccent,
       ),
       ProjectModel(
-        title: '20Beyti',
-        description:
-            'Online store for easy & safe shopping experience with free & safe delivery to doorsteps and endless benefits.',
+        title: 'project_data.beyti.title',
+        description: 'project_data.beyti.description',
         technologies: ['Flutter', 'QR Scanner', 'E-commerce', 'Firebase'],
         color: Colors.green,
       ),
       ProjectModel(
-        title: 'Hawaha Dent',
-        description:
-            'Dental clinic management application with online radio station and vibrant dental community features.',
+        title: 'project_data.hawahadent.title',
+        description: 'project_data.hawahadent.description',
         technologies: ['Flutter', 'Audio Player', 'Healthcare', 'Appointments'],
         color: Colors.pink,
       ),
       ProjectModel(
-        title: 'Khamato',
-        description:
-            'Online market for building and finishing materials, designed to be a comprehensive commercial center.',
+        title: 'project_data.khamato.title',
+        description: 'project_data.khamato.description',
         technologies: ['Flutter', 'Marketplace', 'Payment Gateway', 'Cubit'],
         color: Colors.amber,
       ),
       ProjectModel(
-        title: 'Ceem',
-        description:
-            'Smartphone application through which you can get thousands of coupons and discount codes from famous places.',
+        title: 'project_data.ceem.title',
+        description: 'project_data.ceem.description',
         technologies: ['Flutter', 'Coupons', 'Geocoding', 'Native Calendar'],
         color: Colors.teal,
       ),
       ProjectModel(
-        title: 'QuickSeat',
-        description:
-            'Live reservation system suitable for clubs, bars, lounges, restaurants, etc., allowing online bookings.',
+        title: 'project_data.quickseat.title',
+        description: 'project_data.quickseat.description',
         technologies: ['Flutter', 'Real-time', 'Reservation', 'Background Service'],
         color: Colors.orange,
       ),
       ProjectModel(
-        title: 'BuyBackArt',
-        description:
-            'App for selling old phones, laptops or any electronic devices. Stay a step ahead by selling at best price.',
+        title: 'project_data.buybackart.title',
+        description: 'project_data.buybackart.description',
         technologies: ['Flutter', 'E-commerce', 'Estimation', 'Deployment'],
         color: Colors.cyan,
       ),
       ProjectModel(
-        title: 'GrowPharma',
-        description:
-            'Medical company application specializing in food supplements.',
+        title: 'project_data.growpharma.title',
+        description: 'project_data.growpharma.description',
         technologies: ['Flutter', 'Medical', 'Supplements'],
         color: Colors.lightGreen,
       ),
       ProjectModel(
-        title: 'Facility Management',
-        description:
-            'Resident application that manages compounds and large institutions with various services.',
+        title: 'project_data.facility.title',
+        description: 'project_data.facility.description',
         technologies: ['Flutter', 'Facility Management', 'Services'],
         color: Colors.deepPurple,
       ),
       ProjectModel(
-        title: 'POS (Vendor & User)',
-        description:
-            'POS application for managing markets, pharmacies, etc. User app to view bills and pay.',
+        title: 'project_data.pos.title',
+        description: 'project_data.pos.description',
         technologies: ['Flutter', 'POS', 'Payments'],
         color: Colors.redAccent,
       ),
       ProjectModel(
-        title: 'Besty Multi Vendor E-commerce',
-        description:
-            'Robust, scalable, and user-friendly online shopping platform built with PHP Laravel.',
+        title: 'project_data.besty.title',
+        description: 'project_data.besty.description',
         technologies: ['PHP', 'Laravel', 'MySQL', 'Stripe'],
         color: Colors.deepOrange,
       ),
