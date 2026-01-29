@@ -50,7 +50,7 @@ class AppStrings {
   static String get appTitle => 'appTitle'.tr();
   static String get yourName => 'yourName'.tr();
   static String get copyright => 'copyright'.tr();
-  static const String profilePicture = 'images/profile.jpg';
+  static const String profilePicture = 'assets/images/profile.jpg';
 
   // Navigation
   static String get navHome => 'nav.home'.tr();
