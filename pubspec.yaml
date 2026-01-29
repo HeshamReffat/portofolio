@@ -38,14 +38,15 @@ flutter_icons:
 flutter:
   uses-material-design: true
 
-assets:
-  - assets/images/
-  - assets/images/profile.jpg
-  - assets/icon/
-  - assets/icon/icon.png
-  - assets/translations/
-  - assets/translations/ar.json
-  - assets/translations/en.json
+  assets:
+    - assets/
+    - assets/images/
+    - assets/images/profile.jpg
+    - assets/icon/
+    - assets/icon/icon.png
+    - assets/translations/
+    - assets/translations/ar.json
+    - assets/translations/en.json
 
 flutter_native_splash:
   color: "#0A0E27"
