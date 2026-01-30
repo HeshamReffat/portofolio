@@ -15,7 +15,7 @@ class ExperienceSection extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Work Experience',
+             AppStrings.experienceTitle,
             style: GoogleFonts.cairo(
               fontSize: 48,
               fontWeight: FontWeight.bold,

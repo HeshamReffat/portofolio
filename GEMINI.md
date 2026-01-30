@@ -1,48 +1,105 @@
-# GEMINI.md - Flutter Portfolio Context
+# Flutter Portfolio - Context & Instructions
 
 ## Project Overview
-This is a modern, responsive portfolio website built with **Flutter Web** following **MVVM Clean Architecture** principles and **feature-based** organization.
 
-### Core Technologies
-- **Framework**: Flutter (Stable channel)
-- **State Management**: Provider (ChangeNotifier)
-- **Dependency Injection**: GetIt (Service Locator)
-- **Localization**: `easy_localization` (Supporting English & Arabic)
-- **Typography**: `google_fonts` (using **Cairo** for dual-language support)
-- **Animations**: `animated_text_kit`, custom `TweenAnimationBuilder`, and CSS animations in `index.html`.
-- **UI Styles**: Glassmorphism, animated gradients, and responsive layouts.
+This is a personal portfolio website built with **Flutter**, specifically optimized for the **Web**. It employs a strict **MVVM Clean Architecture** pattern to ensure separation of concerns, testability, and scalability.
 
-## Architecture
-The project is divided into `core/` and `features/`:
-- **core/**: App-wide constants, theme, dependency injection, and shared utilities (e.g., `ResponsiveWidget`, `AnimatedBackground`).
-- **features/**: Each feature (home, about, experience, projects, skills, certificates, contact) contains:
-    - **data/**: Models (JSON serialization) and DataSources (Local/Mock).
-    - **domain/**: Entities and Repository interfaces.
-    - **presentation/**: Pages, ViewModels, and Feature-specific widgets.
+### Key Characteristics
+- **Type:** Flutter Web Application
+- **Architecture:** Clean Architecture + MVVM (Model-View-ViewModel)
+- **State Management:** Provider
+- **Dependency Injection:** GetIt
+- **Localization:** Easy Localization (English & Arabic)
+- **Responsive Design:** Custom breakpoints for Mobile, Tablet, and Desktop
 
-## Building and Running
-- **Install Dependencies**: `flutter pub get`
-- **Run Locally (Debug)**: `flutter run -d chrome`
-- **Build for Release (Web)**: `flutter build web --release --base-href "/portofolio/"`
-- **Format Code**: `dart format .`
-- **Analyze Code**: `flutter analyze`
+## 🏗 Architecture & Structure
 
-## Deployment
-The project is configured for **GitHub Pages** via a GitHub Action (`.github/workflows/deploy.yml`). 
-- **Base HREF**: Must be set to `"/portofolio/"` (or the repository name) for assets to resolve correctly on GitHub Pages.
-- **Assets**: All assets are stored in `assets/` and declared in `pubspec.yaml`.
-    - Images: `assets/images/`
-    - Icons: `assets/icon/`
-    - Translations: `assets/translations/`
+The project follows a feature-based directory structure. Each feature is self-contained with its own Clean Architecture layers.
 
-## Key Implementation Details
-- **Localization**: Uses JSON files in `assets/translations/`. The `path` in `EasyLocalization` must be `assets/translations`.
-- **RTL Support**: Switched to **Cairo** font to ensure Arabic characters display correctly.
-- **Splash Screen**: Custom animated splash screen implemented in `web/index.html` with a pulse animation.
-- **Responsive UI**: Uses a `ResponsiveWidget` utility and `MediaQuery` breakpoints (Mobile: 600, Tablet: 1200).
-- **Smooth Navigation**: Floating navigation bar with `Scrollable.ensureVisible` for section-based scrolling.
+```
+lib/
+├── core/                          # Shared resources
+│   ├── constants/                 # AppConstants (Colors, Strings, Dims)
+│   ├── theme/                     # AppTheme configuration
+│   ├── utils/                     # Shared Widgets & Helpers
+│   └── di/                        # Dependency Injection (injection_container.dart)
+│
+├── features/                      # Feature modules (e.g., home, about, projects)
+│   ├── [feature_name]/
+│   │   ├── data/
+│   │   │   ├── models/           # DTOs (Data Transfer Objects), usually extends Entities
+│   │   │   ├── datasources/      # Remote/Local data fetching logic
+│   │   │   └── repositories/     # Implementation of Domain Repositories
+│   │   ├── domain/
+│   │   │   ├── entities/         # Pure Dart business objects
+│   │   │   ├── repositories/     # Abstract Repository interfaces
+│   │   │   └── usecases/         # Single-responsibility business logic
+│   │   └── presentation/
+│   │       ├── pages/            # Full screen views
+│   │       ├── widgets/          # Feature-specific components
+│   │       └── viewmodels/       # ChangeNotifier classes for state
+│
+└── main.dart                      # Entry point, Provider setup, Theme setup
+```
 
-## Known Issues & Tips
-- **Asset Loading on Web**: When deploying to a sub-path (like GitHub Pages), ensure the `base` tag in `index.html` is updated (handled by the build command). Refer to assets using the full project path (e.g., `assets/images/profile.jpg`).
-- **Easy Localization on Web**: If assets fail to load, verify that the `path` matches the folder name exactly and that the folder is included in `pubspec.yaml`.
-- **CanvasKit vs HTML**: The app can be run with `--web-renderer html` for better compatibility or `canvaskit` for better performance.
+## 🛠 Building & Running
+
+**Prerequisites:** Flutter SDK installed (Targeting Web).
+
+- **Install Dependencies:**
+  ```bash
+  flutter pub get
+  ```
+
+- **Run on Web (Chrome):**
+  ```bash
+  flutter run -d chrome
+  ```
+
+- **Build for Web:**
+  ```bash
+  flutter build web --release
+  ```
+
+- **Run Tests:**
+  ```bash
+  flutter test
+  ```
+
+## 📝 Development Conventions
+
+### 1. New Feature Workflow
+When adding a new feature (e.g., `blog`), follow this order:
+1.  **Domain:** Define `Entity`, `Repository` interface, and `UseCases`.
+2.  **Data:** Create `Model` (extends Entity), `DataSource`, and `RepositoryImpl`.
+3.  **Presentation:** Create `ViewModel`, `Page`, and `Widgets`.
+4.  **DI:** Register all new classes in `lib/core/di/injection_container.dart`.
+5.  **Provider:** Add the `ViewModel` to the `MultiProvider` list in `lib/main.dart`.
+
+### 2. State Management
+- Use `ChangeNotifier` for ViewModels.
+- ViewModels should expose getters for UI state (e.g., `isLoading`, `data`, `error`).
+- UI components (Pages/Widgets) consume state via `context.watch<ViewModel>()` or `Consumer<ViewModel>`.
+- Trigger actions via `context.read<ViewModel>().someAction()`.
+
+### 3. Styling & Theming
+- **Colors:** Always use `AppColors` from `lib/core/constants/app_constants.dart`.
+- **Text:** Use `EasyLocalization` (`.tr()`) for all user-facing strings. Keys are in `assets/translations/`.
+- **Responsiveness:** Use `ResponsiveWidget` (if available) or `LayoutBuilder` to adapt UI.
+- **Theme:** centralized in `AppTheme`.
+
+### 4. Dependency Injection
+- Use the global service locator `sl` (from `get_it`).
+- Register UseCases and Repositories as `lazySingleton`.
+- Register ViewModels as `factory` (usually) or `singleton` depending on need.
+
+### 5. Constants
+- `AppStrings` for localization keys and static URLs.
+- `AppDimensions` for padding, border radius, and icon sizes.
+- `AppDurations` for animation timings.
+
+## 🔑 Key Files
+- `lib/main.dart`: App entry point, providers, and localization setup.
+- `lib/core/di/injection_container.dart`: Central registry for all app dependencies.
+- `lib/core/constants/app_constants.dart`: Central source of truth for colors and strings.
+- `lib/features/home/presentation/pages/home_page.dart`: Main landing page acting as a scrollable container for other sections.
